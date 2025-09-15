@@ -1,30 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF‑8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Live TV Player - Green Tech</title>
+  <title>Live TV Player - Advanced</title>
   <link rel="icon" href="logo.png">
-  <meta name="theme-color" content="#00ff80">
-  <!-- Plyr CSS -->
+  <meta name="theme-color" content="#ff6f00">
+  <!-- Plyr or Video.js CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/plyr/dist/plyr.css" />
   <link rel="stylesheet" href="styles.css" />
-</head>
+ </head>
 <body data-theme="dark">
   <div class="container">
-    <!-- Theme toggle -->
     <button id="themeToggle" class="theme-btn" aria-label="Toggle theme">🌙</button>
-    
-    <!-- App title -->
     <h1>B.M.B Live TV Player</h1>
-    
-    <!-- Search input -->
     <input id="search" class="search-input" type="text" placeholder="Search channels…" />
-    
-    <!-- Loader -->
     <div id="loading" class="loader"><div class="spinner"></div> Loading channels…</div>
-    
-    <!-- Channel list -->
     <div id="channel-list" class="channel-list" aria-live="polite"></div>
 
     <!-- Player UI -->
@@ -40,13 +31,12 @@
       <div id="subtitle-selector" class="selector"></div>
     </div>
 
-    <!-- Toast -->
     <div id="toast" class="toast hidden" role="status" aria-live="polite"></div>
   </div>
 
-  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/hls.js/dist/hls.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/plyr/dist/plyr.polyfilled.js"></script>  
   <script src="script.js"></script>
-</body>
+  </body>
   </html>
+  
